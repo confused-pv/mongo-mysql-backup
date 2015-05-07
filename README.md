@@ -36,7 +36,7 @@ S3_BUCKET=mongo-production
 ```
 # Execution
 
-> confused@Prakhars-MacBook-Pro ~ $ sh start_backup.sh
+> confused@Prakhars-MacBook-Pro ~ $ sh start_backup.sh or ./start_backup.sh
 
 You can just put in crontab of your system to make sure backup is done every day without any issue.
 
