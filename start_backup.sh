@@ -63,5 +63,5 @@ do
 	esac
 done
 
-mail -s "backup Completed" prakhar007@gmail.com <<< "Back Up Completed"
+mail -s "backup Completed" {email} <<< "Back Up Completed"
 rmdir ./${pidDir}
