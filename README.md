@@ -1,13 +1,13 @@
 # MongoDb / Mysql backup to S3
 
-A simple script to store back up in S3. It is ideal for medium scale backups. Mysqldump will lock take lock on all tables while generating .sql file. Hence it is not recommended for large databases. 
+A simple script to store back up in S3. It is ideal for medium scale backups. Mysqldump will lock take lock on all tables while generating .sql file. Hence it is not recommended for large databases.
 Snapshot would be ideal for large scale databases.
 
 # Setup requirements
   - aws cli should already be configured
   - mongo shell if mongodb backup is required
   - mysql-client if mysql backup is required
- 
+
 # Configuration Files
 
 > config.ini
@@ -20,7 +20,7 @@ Snapshot would be ideal for large scale databases.
   BACKUP_2=mongo_production.ini
   BACKUP_3=mysql_production.ini
 ```
-  
+
 > Config files for each host.
 - Each config files would be present under the config folder. It needs following variable
 
@@ -41,4 +41,4 @@ S3_BUCKET=mongo-production
 You can just put in crontab of your system to make sure backup is done every day without any issue.
 
 ### Version
-3.0.2
+1.0.0
