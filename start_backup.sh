@@ -13,8 +13,6 @@ else
 	exit 1
 fi
 
-rmdir ./${pidDir}
-exit;
 if [ -n "$1" ]; then
     DATESTRING=$1
 else
